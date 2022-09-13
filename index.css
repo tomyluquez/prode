@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background-image: url(/Imgs/fondo\ qatar\ 2022.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 45%;
+    bottom: 0
+}
+.cont-total{
+    width: 50%;
+    height: 50%;
+    /* background-color: black; */
+    border: 3px solid   black;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px 10px black;
+}
+.textos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    color: #fafafa;
+    /* background-color: blue; */
+}
+.textos span{
+    color: #fafafaa5;
+}
+.cont-input{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.formulario{
+    width: 30%;
+    height: 30%;
+    /* background-color: green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+.inputPass{
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    background-color: transparent;
+    border: none;
+    outline: 0px;
+    color: #fafafa;
+}
+label{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-bottom: 1px solid #fafafa;
+    pointer-events: none;
+}
+label:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid orange;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+.inp{
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    transition: all 0.3s ease;
+    color: #fafafa;
+}
+.inputPass:focus + label .inp,
+.inputPass:valid + label .inp {
+    transform: translateY(-35px);
+    color: orange;
+    font-size: 10px;
+}
+.inputPass:focus + label:after,
+.inputPass:valid + label:after{
+    transform: translateX(0);
+}
+.ingresar{
+    margin-top: 3rem;
+    width: 20%;
+    height: 20%;
+    cursor: pointer;
+    background-color: orange;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    color: #fafafa;
+}
+.ingresar:hover{
+   background-color: rgb(174, 115, 4)    
+}
+
+@media (max-width: 600px) {
+    body{
+        background-image: url(/Imgs/fondo\ qatar\ 2022.jpg);
+        background-position: center;
+    }
+    
+    .cont-total{
+        width: 80%;
+    }
+    
+    .ingresar{
+        width: 80%
+    }
+
+    .formulario{
+        width: 70%;
+    }
+    .inputPass{
+        width: 100%;
+    }
+    .textos span{
+        text-align: center;
+        font-size: 10px;
+    }
+    img{
+        left: auto;
+        bottom: 3rem;
+    }
+}
