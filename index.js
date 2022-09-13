@@ -5,7 +5,7 @@ button.addEventListener("click", ()=> {
     let passInput = document.getElementById("pass").value
 
     if (passInput === passTomas) {
-        document.location="tomas.html"
+        document.location="main.html"
     } else {
         alert("mal")
     }
