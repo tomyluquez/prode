@@ -76,13 +76,39 @@ h2{
         position: relative;
     }
     .cont-list{
-        display: none;
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        height: auto;
+        background-color: #570E1F;
+        top: 50px;
+        transition: all .4s ease;
+        margin-top: 1rem;
+    }
+    .cont-list li{
+        /* display: none; */
+        padding: 1rem;
+        border-bottom: 1px solid #fafafa;
+        width: 80%;
+        text-align: center;
+    }
+    .listado{
+        opacity: 1;
+        box-shadow: 5px 5px 5px black;
+        z-index: 10;
     }
     body{
         background-position: center;
     }
     .instrucciones{
         height: 100%;
+    }
+    .opacity{
+        opacity: 0.5;
     }
     .cont{
         overflow: hidden;
@@ -93,10 +119,11 @@ h2{
     }
     .listInstrucciones{
         font-size: small;
-        line-height: normal;
+        line-height: 1.3rem;
+        font-weight: 400;
         margin-left: 1rem;
     }
-    img{
+    .logo{
         position: absolute;
         left: 160px;
         top: 65px;
@@ -105,5 +132,8 @@ h2{
         display: block;
         position: absolute;
         right: 15;
+        top: 10px;
+        width: 60px;
     }
+
 }
