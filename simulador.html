@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/simulador.css">
+    <title>Prode 2022 - Simulador</title>
+</head>
+<body>
+    <div class="contenedor">
+
+        <div class="resultReal">
+            <h3>Resultado Real</h3>
+            <span>Argentina</span>
+            <img src="/Imgs/argentina.jpg" alt="">
+            <input type="text" name="arg" id="argReal" value=2 disabled>
+            <span>-</span>
+            <input type="text" name="saudi" id="saudiReal" value=0 disabled>
+            <img src="/Imgs/arabiaSaudi.png" alt="">
+            <span>Arabia Saudita</span>
+        </div>
+
+        <div class="resultSimulado">
+                 <h3>Simula tu Resultado</h3>
+                <div class="contSimulador">
+                    <span>Argentina</span>
+                    <img src="/Imgs/argentina.jpg" alt="">
+                    <input type="text" name="" id="argSimu">
+                    <span>-</span>
+                    <input type="text" name="" id="saudiSimu">
+                    <img src="/Imgs/arabiaSaudi.png" alt="">
+                    <span>Arabia Saudita</span>
+                 </div>
+               <button  class="buttonSimulador" id="boton">SIMULAR</button>
+        </div>
+
+        <div class="puntaje">
+            <h3>PUNTOS</h3>
+            <span id="resultado">-</span>
+            <p id="explicacion"></p>
+        </div>
+
+    </div>
+
+    <script src="/simulador.js"></script>
+</body>
+</html>

@@ -24,3 +24,5 @@ listadoSmulador.addEventListener("click", ()=> {
     document.location="simulador.html"
 })
 
+
+
