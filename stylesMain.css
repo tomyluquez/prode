@@ -1,3 +1,7 @@
+/*************** estilos generales ****************/
+:root{
+    --naranja: #F2AB01
+}
 *{
     margin: 0;
     padding: 0;
@@ -10,6 +14,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .navbar{
     width: 100vw;
     height: 5rem;
@@ -20,16 +25,18 @@ body{
 .logo{
     width: 5rem;
     height: 100%;
+    cursor: pointer;
 }
 .cont-list{
-    display: flex;
     margin-right: 4rem;
     color: #fafafa;
+    display: flex;
     gap: 1rem;
 }
 .cont-list li{
     list-style: none;
-    padding: 0 1rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
 }
 
 .instrucciones{
@@ -40,7 +47,7 @@ body{
     align-items: center;
 }
 
-.cont{
+.cont-instr{
     width: 80%;
     height: 80%;
     display: flex;
@@ -52,6 +59,7 @@ body{
     font-weight: 100;
     line-height: 1.6rem;
     background-color: #fafafa1d;
+    position: relative;
 }
 
 h2{
@@ -70,37 +78,57 @@ h2{
 .menu {
     display: none;
 }
+.simulator{
+    position: absolute;
+    bottom: 30px;
+    right: 55px;
+    cursor: pointer;
+    background-color: var(--naranja);
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: 0.3rem;
+    color: #fafafa;
+}
+.simulacion{
+    display: none;
+}
+/*************** hover y after ****************/
+.cont-list li:hover{
+    background-color: var(--naranja);
+    border-radius: 5px;
+}
+*::selection{
+    color: var(--naranja);
+}
 
+
+/*************** mobile ****************/
 @media (max-width: 600px) {
     .navbar{
         position: relative;
     }
     .cont-list{
-        opacity: 0;
+        width: 80%;
+        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
         position: absolute;
-        width: 100%;
-        height: auto;
         background-color: #570E1F;
-        top: 50px;
+        top: 30px;
+        left: 400px;
         transition: all .4s ease;
         margin-top: 1rem;
     }
     .cont-list li{
-        /* display: none; */
         padding: 1rem;
         border-bottom: 1px solid #fafafa;
         width: 80%;
         text-align: center;
     }
-    .listado{
-        opacity: 1;
-        box-shadow: 5px 5px 5px black;
-        z-index: 10;
-    }
+  
     body{
         background-position: center;
     }
@@ -110,12 +138,13 @@ h2{
     .opacity{
         opacity: 0.5;
     }
-    .cont{
+    .cont-instr{
         overflow: hidden;
         width: 100vw;
     }
     h2{
         font-size: 2rem;
+        margin-top: 1.3rem;
     }
     .listInstrucciones{
         font-size: small;
@@ -134,6 +163,20 @@ h2{
         right: 15;
         top: 10px;
         width: 60px;
+        z-index: 10;
     }
 
+    .simulator{
+        display: none;
+    }
+    .simulacion{
+        display: block;
+        background-color: var(--naranja);
+    }
+/*************** estilos js ****************/
+.listado{
+    left: 75px;
+     box-shadow: -5px 5px 5px black;
+     z-index: 10;
+ }
 }

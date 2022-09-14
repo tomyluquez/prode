@@ -9,7 +9,7 @@
 <body>
     <header class="encabezado">
         <nav class="navbar">
-            <img class="logo" src="/Imgs/logo.png" alt="" >
+            <img class="logo" src="/Imgs/logo.png" alt="" id="logo">
             <img src="/Imgs/menuHamburguesa.png" alt="" class="menu" id="burger">
             <ul class="cont-list" id="contenedor">
                 <li>Grupo A</li>
@@ -20,11 +20,13 @@
                 <li>Grupo F</li>
                 <li>Grupo G</li>
                 <li>Grupo H</li>
+                <li>Tabla General</li>
+                <li class="simulacion" id="simuList">Simular Resultado</li>
             </ul>
         </nav>
     </header>
     <section class="instrucciones">
-        <div class="cont">
+        <div class="cont-instr">
             <h2>INSTRUCCIONES</h2>
             <ul class="listInstrucciones" id="instruc">
                 <li>El prode tiene un valor inicial de $1.000</li>
@@ -46,8 +48,8 @@
                     <li>Se va a llevar 3 Puntos al que haya puesto Equipo A: 1 vs Equipo B: 0 (ya que acerto exacto el resultado)</li>
                     <li>En cada fecha, cada participante tendra la opcion de marcar un partido "Estrella",
                          lo cual duplicara el puntaje que haya obtenido en ese partido</li>
-
             </ul>
+            <button class="simulator" id="simuButt">Simular Restultado</button>
         </div>
     </section>
     <script src="/main.js"></script>
