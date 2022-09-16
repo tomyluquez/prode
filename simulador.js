@@ -2,6 +2,11 @@
 let botonSimular = document.getElementById("boton")
 let resultado = document.getElementById("resultado")
 let explicacion = document.getElementById("explicacion")
+let botonAtras = document.getElementById("back")
+let argSimuin = document.getElementById("argSimu")
+let saudiSimuin = document.getElementById("saudiSimu")
+let resultReal = document.getElementById("resultReal")
+
 
 // funciones //
 botonSimular.addEventListener("click", ()=> {
@@ -86,3 +91,6 @@ botonSimular.addEventListener("click", ()=> {
     }
 })
 
+botonAtras.addEventListener("click", () => {
+    document.location="main.html"
+})

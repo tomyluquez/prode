@@ -19,7 +19,7 @@ body{
     width: 100vw;
     height: 5rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 .logo{
@@ -32,6 +32,8 @@ body{
     color: #fafafa;
     display: flex;
     gap: 1rem;
+    border: 1px solid   grey;
+    background-color: #0000006b;
 }
 .cont-list li{
     list-style: none;
@@ -58,7 +60,7 @@ body{
     color: #fafafa;
     font-weight: 100;
     line-height: 1.6rem;
-    background-color: #fafafa1d;
+    background-color: #0000006b;
     position: relative;
 }
 
@@ -80,8 +82,8 @@ h2{
 }
 .simulator{
     position: absolute;
-    bottom: 30px;
-    right: 55px;
+    top: -120px;
+    right: -90px;
     cursor: pointer;
     background-color: var(--naranja);
     border: none;
@@ -89,6 +91,7 @@ h2{
     font-size: 1rem;
     padding: 0.3rem;
     color: #fafafa;
+    text-transform: uppercase;
 }
 .simulacion{
     display: none;
@@ -98,10 +101,6 @@ h2{
     background-color: var(--naranja);
     border-radius: 5px;
 }
-*::selection{
-    color: var(--naranja);
-}
-
 
 /*************** mobile ****************/
 @media (max-width: 600px) {
@@ -130,7 +129,9 @@ h2{
     }
   
     body{
+        background-image: url(/Imgs/fondoCElu.jpg);
         background-position: center;
+        height: 115%;
     }
     .instrucciones{
         height: 100vh;
@@ -141,6 +142,9 @@ h2{
     .cont-instr{
         overflow: hidden;
         width: 100vw;
+        height: 90%;
+        position: absolute;
+        top: 60px;
     }
     h2{
         font-size: 2rem;

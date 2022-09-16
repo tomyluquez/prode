@@ -9,27 +9,35 @@
 <body>
     <div class="contenedor">
 
-        <div class="resultReal">
+        <div id="resulReal" class="resultReal">
             <h3>Resultado Real</h3>
-            <span>Argentina</span>
-            <img src="/Imgs/argentina.jpg" alt="">
-            <input type="text" name="arg" id="argReal" value=2 disabled>
+            <div class="arg">
+                <span>Argentina</span>
+                <img src="/Imgs/argentina.jpg" alt="">
+                <input type="text" name="arg" id="argReal" value=2 disabled>
+            </div>
             <span>-</span>
-            <input type="text" name="saudi" id="saudiReal" value=0 disabled>
-            <img src="/Imgs/arabiaSaudi.png" alt="">
-            <span>Arabia Saudita</span>
+            <div class="saudi">
+                <input type="text" name="saudi" id="saudiReal" value=0 disabled>
+                <img src="/Imgs/arabiaSaudi.png" alt="">
+                <span>Arabia Saudita</span>
+            </div>
         </div>
 
         <div class="resultSimulado">
                  <h3>Simula tu Resultado</h3>
                 <div class="contSimulador">
-                    <span>Argentina</span>
-                    <img src="/Imgs/argentina.jpg" alt="">
-                    <input type="text" name="" id="argSimu">
+                    <div class="argSimu">
+                        <span>Argentina</span>
+                        <img src="/Imgs/argentina.jpg" alt="">
+                        <input type="text" name="" id="argSimu">
+                     </div>
                     <span>-</span>
-                    <input type="text" name="" id="saudiSimu">
-                    <img src="/Imgs/arabiaSaudi.png" alt="">
-                    <span>Arabia Saudita</span>
+                    <div class="saudiSimu">
+                        <input type="text" name="" id="saudiSimu">
+                        <img src="/Imgs/arabiaSaudi.png" alt="">
+                        <span>Arabia Saudita</span>
+                    </div>
                  </div>
                <button  class="buttonSimulador" id="boton">SIMULAR</button>
         </div>
@@ -41,6 +49,8 @@
         </div>
 
     </div>
+
+    <button class="atras" id="back">ATRAS</button>
 
     <script src="/simulador.js"></script>
 </body>

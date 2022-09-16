@@ -8,7 +8,7 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 body{
-    background-image: url(/Imgs/fondo\ qatar\ 2022.jpg);
+    background-image: url(/Imgs/fondo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -17,8 +17,8 @@ body{
     align-items: center;
 }
 img{
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     position: absolute;
     left: 45%;
     bottom: 0
@@ -26,23 +26,37 @@ img{
 .cont-total{
     width: 50%;
     height: 50%;
-    /* background-color: black; */
-    border: 3px solid   black;
     border-radius: 20px;
     box-shadow: 2px 2px 10px 10px black;
+    background-color: #0000006b;
+    backdrop-filter: blur (4px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .textos{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 50%;
     height: 50%;
     color: #fafafa;
-    /* background-color: blue; */
+    margin: 0.5rem 0;
+ 
 }
 .textos span{
     color: #fafafaa5;
+    background-color: rgba(0, 0, 0, 0.512);
+    position: absolute;
+    top: 130px;
+}
+
+.textos h1{
+    position: absolute;
+    top: 30px;
+    font-size: 5rem;
 }
 .cont-input{
     width: 100%;
@@ -55,7 +69,6 @@ img{
 .formulario{
     width: 30%;
     height: 30%;
-    /* background-color: green; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,7 +123,7 @@ label:after{
 }
 .ingresar{
     margin-top: 3rem;
-    width: 20%;
+    width: 40%;
     height: 20%;
     cursor: pointer;
     background-color: var(--naranja);
@@ -120,22 +133,25 @@ label:after{
     transition: all 0.3s ease;
     color: #fafafa;
 }
-.ingresar:hover{
-   background-color: rgb(174, 115, 4)    
-}
+
 
 @media (max-width: 600px) {
     body{
-        background-image: url(/Imgs/fondo\ qatar\ 2022.jpg);
-        background-position: center;
+        background-image: url(/Imgs/fondoCElu.jpg);
+        background-size: cover;
+        background-position: bottom;
     }
-    
+
     .cont-total{
         width: 80%;
+        margin-bottom: 150px;
+        min-height: 400px;
+        z-index: 10;
+        margin-top: 100px;
     }
     
     .ingresar{
-        width: 80%
+        width: 80%;
     }
 
     .formulario{
@@ -147,9 +163,18 @@ label:after{
     .textos span{
         text-align: center;
         font-size: 10px;
+        position: absolute;
+        top: 250px;
     }
     img{
-        left: auto;
-        bottom: 3rem;
+       display: none;
     }
+
+    .textos h1 {
+        text-align: center;
+        font-size: 1.8rem;
+        position: absolute;
+        top: 200px
+    }
+
 }

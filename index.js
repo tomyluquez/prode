@@ -1,4 +1,5 @@
 let button = document.getElementById("buttonPass")
+let inputPass = document.getElementById("pass")
 
 button.addEventListener("click", ()=> {
     let passTomas = "tenista1"
@@ -7,6 +8,6 @@ button.addEventListener("click", ()=> {
     if (passInput === passTomas) {
         document.location="main.html"
     } else {
-        alert("mal")
+        alert("Contraseña incorrecta")
     }
 })
