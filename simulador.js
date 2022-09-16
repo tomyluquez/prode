@@ -6,10 +6,17 @@ let botonAtras = document.getElementById("back")
 let argSimuin = document.getElementById("argSimu")
 let saudiSimuin = document.getElementById("saudiSimu")
 let resultReal = document.getElementById("resultReal")
+let formSaudi = document.getElementById("saudiSimuForm")
+let formArg = document.getElementById("argSimuForm")
 
 
 // funciones //
-botonSimular.addEventListener("click", ()=> {
+botonSimular.addEventListener("click", simular)
+formSaudi.addEventListener("submit", simular)
+formArg.addEventListener("submit", simular)
+
+function simular (evento){
+    evento.preventDefault()
     let argReal = document.getElementById("argReal").value;
     let saudiReal = document.getElementById("saudiReal").value;
     let argSimu = document.getElementById("argSimu").value;
@@ -89,8 +96,7 @@ botonSimular.addEventListener("click", ()=> {
         resultado.innerHTML=0 
         explicacion.innerHTML="En este caso no ganarias puntos porque sos malisimo jugando"
     }
-})
-
+}
 botonAtras.addEventListener("click", () => {
     document.location="main.html"
 })

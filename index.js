@@ -6,12 +6,13 @@ form.addEventListener("submit", ingresar) // el evento submit es para que funcio
 button.addEventListener("click", ingresar)
 
 function ingresar (evento) {
+    evento.preventDefault() //esto es para que mantenga el valor del input
     let passTomas = "tenista1"
     let passInput = document.getElementById("pass").value
 
      if (passInput === passTomas) {
         document.location="main.html"
     } else alert("Contraseña incorrecta") 
-        evento.preventDefault() //esto es para que mantenga el valor del input
+        
 }
 
